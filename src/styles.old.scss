@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('assets/abstract.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #7f8588, #444a4b);
+    color: rgb(32, 24, 24);
+    padding: 10px 20px;
+   
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.middle-section {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.right-section {
+    display: flex;
+    gap: 10px;
+}
+
+.home-button, .search-box, .placeholder-button {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.home-button {
+    background-color: rgba(139, 145, 144, 0.932);
+    color: #035358;
+    cursor: pointer;
+}
+
+.search-box {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.placeholder-button {
+    background-color: rgb(106, 123, 128);
+    color: #010501;
+    cursor: pointer;
+}
+
+.home-button:hover, .placeholder-button:hover {
+    background-color: #819c9e;
+    color: rgb(41, 26, 26);
+}
+
+.headliner {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em; /* Adjust as needed */
+}
+
+main {
+    flex-grow: 1;
+}
+
+.footer-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #333, #555);
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    width: 97.1%;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+.footer-middle {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.social-link {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex: 1;  /* This makes the content area take up the remaining space */
+  }
+
+  app-banner {
+    width: 100%;
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  app-footer {
+    width: 100%;
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+
